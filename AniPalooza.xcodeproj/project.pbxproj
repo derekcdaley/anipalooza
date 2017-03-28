@@ -1,0 +1,704 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		651618801E7EF7360045C098 /* sheep_anm.png in Resources */ = {isa = PBXBuildFile; fileRef = 6516187E1E7EF7360045C098 /* sheep_anm.png */; };
+		651618811E7EF7360045C098 /* cat_anm.png in Resources */ = {isa = PBXBuildFile; fileRef = 6516187F1E7EF7360045C098 /* cat_anm.png */; };
+		651618881E7EF76A0045C098 /* tiger_anm.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618821E7EF76A0045C098 /* tiger_anm.png */; };
+		651618891E7EF76A0045C098 /* lion_anm.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618831E7EF76A0045C098 /* lion_anm.png */; };
+		6516188A1E7EF76A0045C098 /* horse_anm.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618841E7EF76A0045C098 /* horse_anm.png */; };
+		6516188B1E7EF76A0045C098 /* frog_anm.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618851E7EF76A0045C098 /* frog_anm.png */; };
+		6516188C1E7EF76A0045C098 /* dog_anm.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618861E7EF76A0045C098 /* dog_anm.png */; };
+		6516188D1E7EF76A0045C098 /* bear_anm.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618871E7EF76A0045C098 /* bear_anm.png */; };
+		651618931E802BE90045C098 /* bear_anm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 651618921E802BE90045C098 /* bear_anm.wav */; };
+		651618991E8179520045C098 /* dog_anm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 651618981E8179520045C098 /* dog_anm.wav */; };
+		6516189D1E817D4E0045C098 /* lion_anm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6516189C1E817D4E0045C098 /* lion_anm.wav */; };
+		651618A31E8182D50045C098 /* sheep_anm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 651618A21E8182D50045C098 /* sheep_anm.wav */; };
+		651618A71E8185AF0045C098 /* snake_anm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 651618A61E8185AF0045C098 /* snake_anm.wav */; };
+		651618A91E8187310045C098 /* frog_anm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 651618A81E8187310045C098 /* frog_anm.wav */; };
+		651618AB1E8188130045C098 /* cat_anm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 651618AA1E8188130045C098 /* cat_anm.wav */; };
+		651618B31E818EF40045C098 /* tiger_anm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 651618B21E818EF40045C098 /* tiger_anm.wav */; };
+		651618B51E8190260045C098 /* horse_anm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 651618B41E8190260045C098 /* horse_anm.wav */; };
+		651618B91E81AAC10045C098 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618B81E81AAC10045C098 /* Default-568h@2x.png */; };
+		651618BB1E81D1420045C098 /* MainMenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 651618BA1E81D1420045C098 /* MainMenuScene.sks */; };
+		651618BF1E81D2270045C098 /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651618BE1E81D2270045C098 /* MainMenuScene.swift */; };
+		651618C71E820D860045C098 /* Level1Btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618C41E820D860045C098 /* Level1Btn.png */; };
+		651618C81E820D860045C098 /* Level2Btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618C51E820D860045C098 /* Level2Btn.png */; };
+		651618C91E820D860045C098 /* Level3Btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618C61E820D860045C098 /* Level3Btn.png */; };
+		651618CE1E82153E0045C098 /* fence_piece.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618CC1E82153E0045C098 /* fence_piece.png */; };
+		651618CF1E82153E0045C098 /* fence.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618CD1E82153E0045C098 /* fence.png */; };
+		651618D11E8216E70045C098 /* house_beige_side.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618D01E8216E70045C098 /* house_beige_side.png */; };
+		651618D31E8219CD0045C098 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618D21E8219CD0045C098 /* Logo.png */; };
+		651618DB1E82223F0045C098 /* sun.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618DA1E82223F0045C098 /* sun.png */; };
+		651618DD1E82C0B30045C098 /* cloud2.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618DC1E82C0B30045C098 /* cloud2.png */; };
+		651618E61E82D7690045C098 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618E31E82D7690045C098 /* home.png */; };
+		651618E71E82D7690045C098 /* MusicOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618E41E82D7690045C098 /* MusicOff.png */; };
+		651618E81E82D7690045C098 /* MusicOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618E51E82D7690045C098 /* MusicOn.png */; };
+		651618EA1E82D9D30045C098 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618E91E82D9D30045C098 /* gear.png */; };
+		651618EC1E82DC8C0045C098 /* colored_talltrees_grass.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618EB1E82DC8C0045C098 /* colored_talltrees_grass.png */; };
+		651618EE1E82DF200045C098 /* SettingsScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 651618ED1E82DF200045C098 /* SettingsScene.sks */; };
+		651618F01E82E14B0045C098 /* SettingsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651618EF1E82E14B0045C098 /* SettingsScene.swift */; };
+		651618F31E8301F70045C098 /* MusicOffBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618F11E8301F70045C098 /* MusicOffBtn.png */; };
+		651618F41E8301F70045C098 /* MusicOnBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618F21E8301F70045C098 /* MusicOnBtn.png */; };
+		651618F61E8310AC0045C098 /* settings.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 651618F51E8310AC0045C098 /* settings.m4a */; };
+		651B3F641E7C825700FBB7DA /* MusicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651B3F631E7C825700FBB7DA /* MusicButton.swift */; };
+		651B3F661E7D6AB800FBB7DA /* RandomizeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651B3F651E7D6AB800FBB7DA /* RandomizeButton.swift */; };
+		651B3F6C1E7D79C900FBB7DA /* RandomizeBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 651B3F6B1E7D79C900FBB7DA /* RandomizeBtn.png */; };
+		651B3F721E7D89A300FBB7DA /* parrot_anm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 651B3F711E7D89A300FBB7DA /* parrot_anm.wav */; };
+		651B3F741E7D8FAD00FBB7DA /* penguin_anm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 651B3F731E7D8FAD00FBB7DA /* penguin_anm.wav */; };
+		651B3F761E7D900400FBB7DA /* pig_anm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 651B3F751E7D900400FBB7DA /* pig_anm.wav */; };
+		651B3F781E7D90F100FBB7DA /* rabbit_anm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 651B3F771E7D90F100FBB7DA /* rabbit_anm.wav */; };
+		6525884B1E7B688D00543B65 /* elephant_anm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6525884A1E7B688D00543B65 /* elephant_anm.wav */; };
+		652588501E7B7BC300543B65 /* AnimalSounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6525884F1E7B7BC300543B65 /* AnimalSounds.swift */; };
+		65A9267C1E84554D00495455 /* StartBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A9267B1E84554D00495455 /* StartBtn.png */; };
+		65A9267E1E8455F000495455 /* ButtonGrower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A9267D1E8455F000495455 /* ButtonGrower.swift */; };
+		65A926801E845B3300495455 /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A9267F1E845B3300495455 /* StartButton.swift */; };
+		65E934E91E7B849100B4F9A9 /* hippo_anm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 65E934E81E7B849100B4F9A9 /* hippo_anm.wav */; };
+		65E934EB1E7B85B100B4F9A9 /* monkey_anm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 65E934EA1E7B85B100B4F9A9 /* monkey_anm.wav */; };
+		65E934EE1E7B878F00B4F9A9 /* BackgroundMusicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E934ED1E7B878F00B4F9A9 /* BackgroundMusicController.swift */; };
+		65E934F21E7B8B3900B4F9A9 /* main.wav in Resources */ = {isa = PBXBuildFile; fileRef = 65E934F11E7B8B3900B4F9A9 /* main.wav */; };
+		65F862FC1E7A1F78007CFB56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F862FB1E7A1F78007CFB56 /* AppDelegate.swift */; };
+		65F863001E7A1F78007CFB56 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 65F862FF1E7A1F78007CFB56 /* Actions.sks */; };
+		65F863021E7A1F78007CFB56 /* GameScene.sks in Sources */ = {isa = PBXBuildFile; fileRef = 65F863011E7A1F78007CFB56 /* GameScene.sks */; };
+		65F863041E7A1F78007CFB56 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F863031E7A1F78007CFB56 /* GameViewController.swift */; };
+		65F863071E7A1F78007CFB56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F863051E7A1F78007CFB56 /* Main.storyboard */; };
+		65F863091E7A1F78007CFB56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F863081E7A1F78007CFB56 /* Assets.xcassets */; };
+		65F8630C1E7A1F78007CFB56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F8630A1E7A1F78007CFB56 /* LaunchScreen.storyboard */; };
+		65F863201E7A20CD007CFB56 /* elephant_anm.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F863151E7A20CD007CFB56 /* elephant_anm.png */; };
+		65F863211E7A20CD007CFB56 /* giraffe.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F863161E7A20CD007CFB56 /* giraffe.png */; };
+		65F863221E7A20CD007CFB56 /* hippo.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F863171E7A20CD007CFB56 /* hippo.png */; };
+		65F863231E7A20CD007CFB56 /* monkey_anm.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F863181E7A20CD007CFB56 /* monkey_anm.png */; };
+		65F863251E7A20CD007CFB56 /* parrot_anm.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F8631A1E7A20CD007CFB56 /* parrot_anm.png */; };
+		65F863261E7A20CD007CFB56 /* penguin_anm.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F8631B1E7A20CD007CFB56 /* penguin_anm.png */; };
+		65F863271E7A20CD007CFB56 /* pig_anm.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F8631C1E7A20CD007CFB56 /* pig_anm.png */; };
+		65F863281E7A20CD007CFB56 /* rabbit.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F8631D1E7A20CD007CFB56 /* rabbit.png */; };
+		65F863291E7A20CD007CFB56 /* snake_anm.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F8631E1E7A20CD007CFB56 /* snake_anm.png */; };
+		65F8632E1E7A2203007CFB56 /* colored_talltrees.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F8632D1E7A2203007CFB56 /* colored_talltrees.png */; };
+		65F863311E7A229B007CFB56 /* Level1Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 65F863301E7A229B007CFB56 /* Level1Scene.sks */; };
+		65F863331E7A265B007CFB56 /* tree.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F863321E7A265B007CFB56 /* tree.png */; };
+		65F863361E7A29D9007CFB56 /* AnimalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F863351E7A29D9007CFB56 /* AnimalController.swift */; };
+		65F8633A1E7A2B08007CFB56 /* Level1Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F863391E7A2B08007CFB56 /* Level1Scene.swift */; };
+		65F8633C1E7A3A08007CFB56 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F8633B1E7A3A08007CFB56 /* Animal.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6516187E1E7EF7360045C098 /* sheep_anm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sheep_anm.png; sourceTree = "<group>"; };
+		6516187F1E7EF7360045C098 /* cat_anm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat_anm.png; sourceTree = "<group>"; };
+		651618821E7EF76A0045C098 /* tiger_anm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiger_anm.png; sourceTree = "<group>"; };
+		651618831E7EF76A0045C098 /* lion_anm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion_anm.png; sourceTree = "<group>"; };
+		651618841E7EF76A0045C098 /* horse_anm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horse_anm.png; sourceTree = "<group>"; };
+		651618851E7EF76A0045C098 /* frog_anm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frog_anm.png; sourceTree = "<group>"; };
+		651618861E7EF76A0045C098 /* dog_anm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog_anm.png; sourceTree = "<group>"; };
+		651618871E7EF76A0045C098 /* bear_anm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bear_anm.png; sourceTree = "<group>"; };
+		651618921E802BE90045C098 /* bear_anm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bear_anm.wav; sourceTree = "<group>"; };
+		651618981E8179520045C098 /* dog_anm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dog_anm.wav; sourceTree = "<group>"; };
+		6516189C1E817D4E0045C098 /* lion_anm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lion_anm.wav; sourceTree = "<group>"; };
+		651618A21E8182D50045C098 /* sheep_anm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sheep_anm.wav; sourceTree = "<group>"; };
+		651618A61E8185AF0045C098 /* snake_anm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snake_anm.wav; sourceTree = "<group>"; };
+		651618A81E8187310045C098 /* frog_anm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = frog_anm.wav; sourceTree = "<group>"; };
+		651618AA1E8188130045C098 /* cat_anm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cat_anm.wav; sourceTree = "<group>"; };
+		651618B21E818EF40045C098 /* tiger_anm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tiger_anm.wav; sourceTree = "<group>"; };
+		651618B41E8190260045C098 /* horse_anm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = horse_anm.wav; sourceTree = "<group>"; };
+		651618B81E81AAC10045C098 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		651618BA1E81D1420045C098 /* MainMenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenuScene.sks; sourceTree = "<group>"; };
+		651618BE1E81D2270045C098 /* MainMenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
+		651618C41E820D860045C098 /* Level1Btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Level1Btn.png; sourceTree = "<group>"; };
+		651618C51E820D860045C098 /* Level2Btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Level2Btn.png; sourceTree = "<group>"; };
+		651618C61E820D860045C098 /* Level3Btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Level3Btn.png; sourceTree = "<group>"; };
+		651618CC1E82153E0045C098 /* fence_piece.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fence_piece.png; path = "../../Downloads/Kenney Game Assets/Art/Background elements (110 assets)/PNG/fence_piece.png"; sourceTree = "<group>"; };
+		651618CD1E82153E0045C098 /* fence.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fence.png; path = "../../Downloads/Kenney Game Assets/Art/Background elements (110 assets)/PNG/fence.png"; sourceTree = "<group>"; };
+		651618D01E8216E70045C098 /* house_beige_side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = house_beige_side.png; path = "../../Downloads/Kenney Game Assets/Art/Background elements (110 assets)/PNG/house_beige_side.png"; sourceTree = "<group>"; };
+		651618D21E8219CD0045C098 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
+		651618DA1E82223F0045C098 /* sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sun.png; sourceTree = "<group>"; };
+		651618DC1E82C0B30045C098 /* cloud2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloud2.png; path = "../../Downloads/Kenney Game Assets/Art/Background elements (110 assets)/PNG/cloud2.png"; sourceTree = "<group>"; };
+		651618E31E82D7690045C098 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		651618E41E82D7690045C098 /* MusicOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MusicOff.png; sourceTree = "<group>"; };
+		651618E51E82D7690045C098 /* MusicOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MusicOn.png; sourceTree = "<group>"; };
+		651618E91E82D9D30045C098 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
+		651618EB1E82DC8C0045C098 /* colored_talltrees_grass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colored_talltrees_grass.png; sourceTree = "<group>"; };
+		651618ED1E82DF200045C098 /* SettingsScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SettingsScene.sks; sourceTree = "<group>"; };
+		651618EF1E82E14B0045C098 /* SettingsScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsScene.swift; sourceTree = "<group>"; };
+		651618F11E8301F70045C098 /* MusicOffBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MusicOffBtn.png; sourceTree = "<group>"; };
+		651618F21E8301F70045C098 /* MusicOnBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MusicOnBtn.png; sourceTree = "<group>"; };
+		651618F51E8310AC0045C098 /* settings.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = settings.m4a; sourceTree = "<group>"; };
+		651B3F631E7C825700FBB7DA /* MusicButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicButton.swift; sourceTree = "<group>"; };
+		651B3F651E7D6AB800FBB7DA /* RandomizeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomizeButton.swift; sourceTree = "<group>"; };
+		651B3F6B1E7D79C900FBB7DA /* RandomizeBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RandomizeBtn.png; sourceTree = "<group>"; };
+		651B3F711E7D89A300FBB7DA /* parrot_anm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = parrot_anm.wav; sourceTree = "<group>"; };
+		651B3F731E7D8FAD00FBB7DA /* penguin_anm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = penguin_anm.wav; sourceTree = "<group>"; };
+		651B3F751E7D900400FBB7DA /* pig_anm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pig_anm.wav; sourceTree = "<group>"; };
+		651B3F771E7D90F100FBB7DA /* rabbit_anm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rabbit_anm.wav; sourceTree = "<group>"; };
+		6525884A1E7B688D00543B65 /* elephant_anm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = elephant_anm.wav; sourceTree = "<group>"; };
+		6525884F1E7B7BC300543B65 /* AnimalSounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalSounds.swift; sourceTree = "<group>"; };
+		65A9267B1E84554D00495455 /* StartBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartBtn.png; sourceTree = "<group>"; };
+		65A9267D1E8455F000495455 /* ButtonGrower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonGrower.swift; sourceTree = "<group>"; };
+		65A9267F1E845B3300495455 /* StartButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
+		65E934E81E7B849100B4F9A9 /* hippo_anm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hippo_anm.wav; sourceTree = "<group>"; };
+		65E934EA1E7B85B100B4F9A9 /* monkey_anm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = monkey_anm.wav; sourceTree = "<group>"; };
+		65E934ED1E7B878F00B4F9A9 /* BackgroundMusicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundMusicController.swift; sourceTree = "<group>"; };
+		65E934F11E7B8B3900B4F9A9 /* main.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = main.wav; sourceTree = "<group>"; };
+		65F862F81E7A1F78007CFB56 /* AniPalooza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AniPalooza.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F862FB1E7A1F78007CFB56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = AniPalooza/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		65F862FF1E7A1F78007CFB56 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Actions.sks; path = AniPalooza/Actions.sks; sourceTree = SOURCE_ROOT; };
+		65F863011E7A1F78007CFB56 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = GameScene.sks; path = AniPalooza/GameScene.sks; sourceTree = SOURCE_ROOT; };
+		65F863031E7A1F78007CFB56 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = AniPalooza/GameViewController.swift; sourceTree = SOURCE_ROOT; };
+		65F863061E7A1F78007CFB56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65F863081E7A1F78007CFB56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = AniPalooza/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		65F8630B1E7A1F78007CFB56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65F8630D1E7A1F78007CFB56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = AniPalooza/Info.plist; sourceTree = "<group>"; };
+		65F863151E7A20CD007CFB56 /* elephant_anm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elephant_anm.png; sourceTree = "<group>"; };
+		65F863161E7A20CD007CFB56 /* giraffe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = giraffe.png; sourceTree = "<group>"; };
+		65F863171E7A20CD007CFB56 /* hippo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hippo.png; sourceTree = "<group>"; };
+		65F863181E7A20CD007CFB56 /* monkey_anm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monkey_anm.png; sourceTree = "<group>"; };
+		65F8631A1E7A20CD007CFB56 /* parrot_anm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = parrot_anm.png; sourceTree = "<group>"; };
+		65F8631B1E7A20CD007CFB56 /* penguin_anm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = penguin_anm.png; sourceTree = "<group>"; };
+		65F8631C1E7A20CD007CFB56 /* pig_anm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pig_anm.png; sourceTree = "<group>"; };
+		65F8631D1E7A20CD007CFB56 /* rabbit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rabbit.png; sourceTree = "<group>"; };
+		65F8631E1E7A20CD007CFB56 /* snake_anm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snake_anm.png; sourceTree = "<group>"; };
+		65F8632D1E7A2203007CFB56 /* colored_talltrees.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colored_talltrees.png; sourceTree = "<group>"; };
+		65F863301E7A229B007CFB56 /* Level1Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level1Scene.sks; sourceTree = "<group>"; };
+		65F863321E7A265B007CFB56 /* tree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tree.png; sourceTree = "<group>"; };
+		65F863351E7A29D9007CFB56 /* AnimalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalController.swift; sourceTree = "<group>"; };
+		65F863391E7A2B08007CFB56 /* Level1Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level1Scene.swift; sourceTree = "<group>"; };
+		65F8633B1E7A3A08007CFB56 /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65F862F51E7A1F78007CFB56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		651B3F621E7C823000FBB7DA /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				651B3F631E7C825700FBB7DA /* MusicButton.swift */,
+				651B3F651E7D6AB800FBB7DA /* RandomizeButton.swift */,
+				65A9267D1E8455F000495455 /* ButtonGrower.swift */,
+				65A9267F1E845B3300495455 /* StartButton.swift */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
+		652588491E7B686500543B65 /* Animal Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				651618B41E8190260045C098 /* horse_anm.wav */,
+				651618B21E818EF40045C098 /* tiger_anm.wav */,
+				651618AA1E8188130045C098 /* cat_anm.wav */,
+				651618A81E8187310045C098 /* frog_anm.wav */,
+				651618A61E8185AF0045C098 /* snake_anm.wav */,
+				651618A21E8182D50045C098 /* sheep_anm.wav */,
+				6516189C1E817D4E0045C098 /* lion_anm.wav */,
+				651618981E8179520045C098 /* dog_anm.wav */,
+				651618921E802BE90045C098 /* bear_anm.wav */,
+				651B3F751E7D900400FBB7DA /* pig_anm.wav */,
+				651B3F731E7D8FAD00FBB7DA /* penguin_anm.wav */,
+				651B3F771E7D90F100FBB7DA /* rabbit_anm.wav */,
+				65E934EA1E7B85B100B4F9A9 /* monkey_anm.wav */,
+				65E934E81E7B849100B4F9A9 /* hippo_anm.wav */,
+				6525884A1E7B688D00543B65 /* elephant_anm.wav */,
+				651B3F711E7D89A300FBB7DA /* parrot_anm.wav */,
+			);
+			name = "Animal Sounds";
+			sourceTree = "<group>";
+		};
+		65E934EC1E7B877300B4F9A9 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				6525884F1E7B7BC300543B65 /* AnimalSounds.swift */,
+				65E934ED1E7B878F00B4F9A9 /* BackgroundMusicController.swift */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		65E934EF1E7B880800B4F9A9 /* BG Music */ = {
+			isa = PBXGroup;
+			children = (
+				651618F51E8310AC0045C098 /* settings.m4a */,
+				65E934F11E7B8B3900B4F9A9 /* main.wav */,
+			);
+			name = "BG Music";
+			sourceTree = "<group>";
+		};
+		65E934F31E7C243A00B4F9A9 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				65A9267B1E84554D00495455 /* StartBtn.png */,
+				651618E31E82D7690045C098 /* home.png */,
+				651618E41E82D7690045C098 /* MusicOff.png */,
+				651618E51E82D7690045C098 /* MusicOn.png */,
+				651618C41E820D860045C098 /* Level1Btn.png */,
+				651618C51E820D860045C098 /* Level2Btn.png */,
+				651618C61E820D860045C098 /* Level3Btn.png */,
+				651B3F6B1E7D79C900FBB7DA /* RandomizeBtn.png */,
+				651618E91E82D9D30045C098 /* gear.png */,
+				651618F11E8301F70045C098 /* MusicOffBtn.png */,
+				651618F21E8301F70045C098 /* MusicOnBtn.png */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
+		65F862EF1E7A1F78007CFB56 = {
+			isa = PBXGroup;
+			children = (
+				651618B81E81AAC10045C098 /* Default-568h@2x.png */,
+				65F862FA1E7A1F78007CFB56 /* AniPalooza */,
+				65F8632F1E7A225B007CFB56 /* Scenes */,
+				65F863341E7A2999007CFB56 /* GameClasses */,
+				65F863131E7A2014007CFB56 /* Assets */,
+				65F862F91E7A1F78007CFB56 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65F862F91E7A1F78007CFB56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65F862F81E7A1F78007CFB56 /* AniPalooza.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65F862FA1E7A1F78007CFB56 /* AniPalooza */ = {
+			isa = PBXGroup;
+			children = (
+				65F862FB1E7A1F78007CFB56 /* AppDelegate.swift */,
+				65F862FF1E7A1F78007CFB56 /* Actions.sks */,
+				65F863011E7A1F78007CFB56 /* GameScene.sks */,
+				65F863031E7A1F78007CFB56 /* GameViewController.swift */,
+				65F863051E7A1F78007CFB56 /* Main.storyboard */,
+				65F863081E7A1F78007CFB56 /* Assets.xcassets */,
+				65F8630A1E7A1F78007CFB56 /* LaunchScreen.storyboard */,
+				65F8630D1E7A1F78007CFB56 /* Info.plist */,
+			);
+			name = AniPalooza;
+			path = "Guess It";
+			sourceTree = "<group>";
+		};
+		65F863131E7A2014007CFB56 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				65E934F31E7C243A00B4F9A9 /* Buttons */,
+				65E934EF1E7B880800B4F9A9 /* BG Music */,
+				652588491E7B686500543B65 /* Animal Sounds */,
+				65F863141E7A20CD007CFB56 /* Animals */,
+				65F8632B1E7A21DF007CFB56 /* Backgound */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		65F863141E7A20CD007CFB56 /* Animals */ = {
+			isa = PBXGroup;
+			children = (
+				651618821E7EF76A0045C098 /* tiger_anm.png */,
+				651618831E7EF76A0045C098 /* lion_anm.png */,
+				651618841E7EF76A0045C098 /* horse_anm.png */,
+				651618851E7EF76A0045C098 /* frog_anm.png */,
+				651618861E7EF76A0045C098 /* dog_anm.png */,
+				651618871E7EF76A0045C098 /* bear_anm.png */,
+				6516187E1E7EF7360045C098 /* sheep_anm.png */,
+				6516187F1E7EF7360045C098 /* cat_anm.png */,
+				65F863151E7A20CD007CFB56 /* elephant_anm.png */,
+				65F863161E7A20CD007CFB56 /* giraffe.png */,
+				65F863171E7A20CD007CFB56 /* hippo.png */,
+				65F863181E7A20CD007CFB56 /* monkey_anm.png */,
+				65F8631A1E7A20CD007CFB56 /* parrot_anm.png */,
+				65F8631B1E7A20CD007CFB56 /* penguin_anm.png */,
+				65F8631C1E7A20CD007CFB56 /* pig_anm.png */,
+				65F8631D1E7A20CD007CFB56 /* rabbit.png */,
+				65F8631E1E7A20CD007CFB56 /* snake_anm.png */,
+			);
+			name = Animals;
+			path = Round;
+			sourceTree = SOURCE_ROOT;
+		};
+		65F8632B1E7A21DF007CFB56 /* Backgound */ = {
+			isa = PBXGroup;
+			children = (
+				651618EB1E82DC8C0045C098 /* colored_talltrees_grass.png */,
+				651618DC1E82C0B30045C098 /* cloud2.png */,
+				651618DA1E82223F0045C098 /* sun.png */,
+				651618D21E8219CD0045C098 /* Logo.png */,
+				651618D01E8216E70045C098 /* house_beige_side.png */,
+				651618CC1E82153E0045C098 /* fence_piece.png */,
+				651618CD1E82153E0045C098 /* fence.png */,
+				65F863321E7A265B007CFB56 /* tree.png */,
+				65F8632D1E7A2203007CFB56 /* colored_talltrees.png */,
+			);
+			name = Backgound;
+			sourceTree = "<group>";
+		};
+		65F8632F1E7A225B007CFB56 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				651618ED1E82DF200045C098 /* SettingsScene.sks */,
+				65F863301E7A229B007CFB56 /* Level1Scene.sks */,
+				651618BA1E81D1420045C098 /* MainMenuScene.sks */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		65F863341E7A2999007CFB56 /* GameClasses */ = {
+			isa = PBXGroup;
+			children = (
+				651B3F621E7C823000FBB7DA /* Buttons */,
+				65E934EC1E7B877300B4F9A9 /* Sounds */,
+				65F863381E7A2AED007CFB56 /* Scene Classes */,
+				65F863371E7A2AE0007CFB56 /* Animal Classes */,
+			);
+			name = GameClasses;
+			sourceTree = "<group>";
+		};
+		65F863371E7A2AE0007CFB56 /* Animal Classes */ = {
+			isa = PBXGroup;
+			children = (
+				65F863351E7A29D9007CFB56 /* AnimalController.swift */,
+				65F8633B1E7A3A08007CFB56 /* Animal.swift */,
+			);
+			name = "Animal Classes";
+			sourceTree = "<group>";
+		};
+		65F863381E7A2AED007CFB56 /* Scene Classes */ = {
+			isa = PBXGroup;
+			children = (
+				65F863391E7A2B08007CFB56 /* Level1Scene.swift */,
+				651618BE1E81D2270045C098 /* MainMenuScene.swift */,
+				651618EF1E82E14B0045C098 /* SettingsScene.swift */,
+			);
+			name = "Scene Classes";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65F862F71E7A1F78007CFB56 /* AniPalooza */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65F863101E7A1F78007CFB56 /* Build configuration list for PBXNativeTarget "AniPalooza" */;
+			buildPhases = (
+				65F862F41E7A1F78007CFB56 /* Sources */,
+				65F862F51E7A1F78007CFB56 /* Frameworks */,
+				65F862F61E7A1F78007CFB56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AniPalooza;
+			productName = "Guess It";
+			productReference = 65F862F81E7A1F78007CFB56 /* AniPalooza.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65F862F01E7A1F78007CFB56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = DSkwared;
+				TargetAttributes = {
+					65F862F71E7A1F78007CFB56 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MVE264A7CJ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 65F862F31E7A1F78007CFB56 /* Build configuration list for PBXProject "AniPalooza" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65F862EF1E7A1F78007CFB56;
+			productRefGroup = 65F862F91E7A1F78007CFB56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65F862F71E7A1F78007CFB56 /* AniPalooza */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65F862F61E7A1F78007CFB56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F863311E7A229B007CFB56 /* Level1Scene.sks in Resources */,
+				651618C71E820D860045C098 /* Level1Btn.png in Resources */,
+				651618A31E8182D50045C098 /* sheep_anm.wav in Resources */,
+				651618EC1E82DC8C0045C098 /* colored_talltrees_grass.png in Resources */,
+				6516188A1E7EF76A0045C098 /* horse_anm.png in Resources */,
+				651618F31E8301F70045C098 /* MusicOffBtn.png in Resources */,
+				651618891E7EF76A0045C098 /* lion_anm.png in Resources */,
+				651618A71E8185AF0045C098 /* snake_anm.wav in Resources */,
+				651618B51E8190260045C098 /* horse_anm.wav in Resources */,
+				651618DB1E82223F0045C098 /* sun.png in Resources */,
+				651618881E7EF76A0045C098 /* tiger_anm.png in Resources */,
+				651618991E8179520045C098 /* dog_anm.wav in Resources */,
+				65E934E91E7B849100B4F9A9 /* hippo_anm.wav in Resources */,
+				65F863261E7A20CD007CFB56 /* penguin_anm.png in Resources */,
+				65F863201E7A20CD007CFB56 /* elephant_anm.png in Resources */,
+				65F863071E7A1F78007CFB56 /* Main.storyboard in Resources */,
+				651618B31E818EF40045C098 /* tiger_anm.wav in Resources */,
+				651618DD1E82C0B30045C098 /* cloud2.png in Resources */,
+				651B3F741E7D8FAD00FBB7DA /* penguin_anm.wav in Resources */,
+				651618C91E820D860045C098 /* Level3Btn.png in Resources */,
+				65F863091E7A1F78007CFB56 /* Assets.xcassets in Resources */,
+				651618D11E8216E70045C098 /* house_beige_side.png in Resources */,
+				651618CF1E82153E0045C098 /* fence.png in Resources */,
+				651618EE1E82DF200045C098 /* SettingsScene.sks in Resources */,
+				651618B91E81AAC10045C098 /* Default-568h@2x.png in Resources */,
+				6516188B1E7EF76A0045C098 /* frog_anm.png in Resources */,
+				651618EA1E82D9D30045C098 /* gear.png in Resources */,
+				651618A91E8187310045C098 /* frog_anm.wav in Resources */,
+				65E934F21E7B8B3900B4F9A9 /* main.wav in Resources */,
+				651B3F781E7D90F100FBB7DA /* rabbit_anm.wav in Resources */,
+				6516188C1E7EF76A0045C098 /* dog_anm.png in Resources */,
+				651618BB1E81D1420045C098 /* MainMenuScene.sks in Resources */,
+				6516188D1E7EF76A0045C098 /* bear_anm.png in Resources */,
+				651618811E7EF7360045C098 /* cat_anm.png in Resources */,
+				65F863221E7A20CD007CFB56 /* hippo.png in Resources */,
+				65F863291E7A20CD007CFB56 /* snake_anm.png in Resources */,
+				651618E81E82D7690045C098 /* MusicOn.png in Resources */,
+				651B3F721E7D89A300FBB7DA /* parrot_anm.wav in Resources */,
+				65F863271E7A20CD007CFB56 /* pig_anm.png in Resources */,
+				651618D31E8219CD0045C098 /* Logo.png in Resources */,
+				651618931E802BE90045C098 /* bear_anm.wav in Resources */,
+				651618801E7EF7360045C098 /* sheep_anm.png in Resources */,
+				651618C81E820D860045C098 /* Level2Btn.png in Resources */,
+				651618F61E8310AC0045C098 /* settings.m4a in Resources */,
+				65F863331E7A265B007CFB56 /* tree.png in Resources */,
+				65F863211E7A20CD007CFB56 /* giraffe.png in Resources */,
+				651B3F6C1E7D79C900FBB7DA /* RandomizeBtn.png in Resources */,
+				6516189D1E817D4E0045C098 /* lion_anm.wav in Resources */,
+				65A9267C1E84554D00495455 /* StartBtn.png in Resources */,
+				651618E61E82D7690045C098 /* home.png in Resources */,
+				65F863231E7A20CD007CFB56 /* monkey_anm.png in Resources */,
+				65F8630C1E7A1F78007CFB56 /* LaunchScreen.storyboard in Resources */,
+				65F863281E7A20CD007CFB56 /* rabbit.png in Resources */,
+				65F863001E7A1F78007CFB56 /* Actions.sks in Resources */,
+				6525884B1E7B688D00543B65 /* elephant_anm.wav in Resources */,
+				651B3F761E7D900400FBB7DA /* pig_anm.wav in Resources */,
+				651618AB1E8188130045C098 /* cat_anm.wav in Resources */,
+				65E934EB1E7B85B100B4F9A9 /* monkey_anm.wav in Resources */,
+				651618F41E8301F70045C098 /* MusicOnBtn.png in Resources */,
+				651618CE1E82153E0045C098 /* fence_piece.png in Resources */,
+				651618E71E82D7690045C098 /* MusicOff.png in Resources */,
+				65F863251E7A20CD007CFB56 /* parrot_anm.png in Resources */,
+				65F8632E1E7A2203007CFB56 /* colored_talltrees.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65F862F41E7A1F78007CFB56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651618BF1E81D2270045C098 /* MainMenuScene.swift in Sources */,
+				65F863021E7A1F78007CFB56 /* GameScene.sks in Sources */,
+				65E934EE1E7B878F00B4F9A9 /* BackgroundMusicController.swift in Sources */,
+				65A9267E1E8455F000495455 /* ButtonGrower.swift in Sources */,
+				65F8633A1E7A2B08007CFB56 /* Level1Scene.swift in Sources */,
+				651B3F661E7D6AB800FBB7DA /* RandomizeButton.swift in Sources */,
+				65F863041E7A1F78007CFB56 /* GameViewController.swift in Sources */,
+				65F862FC1E7A1F78007CFB56 /* AppDelegate.swift in Sources */,
+				651B3F641E7C825700FBB7DA /* MusicButton.swift in Sources */,
+				65F863361E7A29D9007CFB56 /* AnimalController.swift in Sources */,
+				651618F01E82E14B0045C098 /* SettingsScene.swift in Sources */,
+				65A926801E845B3300495455 /* StartButton.swift in Sources */,
+				652588501E7B7BC300543B65 /* AnimalSounds.swift in Sources */,
+				65F8633C1E7A3A08007CFB56 /* Animal.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		65F863051E7A1F78007CFB56 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65F863061E7A1F78007CFB56 /* Base */,
+			);
+			name = Main.storyboard;
+			path = AniPalooza;
+			sourceTree = SOURCE_ROOT;
+		};
+		65F8630A1E7A1F78007CFB56 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65F8630B1E7A1F78007CFB56 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = AniPalooza;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65F8630E1E7A1F78007CFB56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		65F8630F1E7A1F78007CFB56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65F863111E7A1F78007CFB56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = MVE264A7CJ;
+				INFOPLIST_FILE = "$(SRCROOT)/AniPalooza/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.derekdaley.anipalooza1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		65F863121E7A1F78007CFB56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = MVE264A7CJ;
+				INFOPLIST_FILE = "$(SRCROOT)/AniPalooza/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.derekdaley.anipalooza1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65F862F31E7A1F78007CFB56 /* Build configuration list for PBXProject "AniPalooza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65F8630E1E7A1F78007CFB56 /* Debug */,
+				65F8630F1E7A1F78007CFB56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65F863101E7A1F78007CFB56 /* Build configuration list for PBXNativeTarget "AniPalooza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65F863111E7A1F78007CFB56 /* Debug */,
+				65F863121E7A1F78007CFB56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65F862F01E7A1F78007CFB56 /* Project object */;
+}
