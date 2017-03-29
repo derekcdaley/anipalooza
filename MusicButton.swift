@@ -9,30 +9,34 @@
 import SpriteKit
 
 class MusicButton {
+    private let positioning = Positioning();
     
     private var musicOnBtn:SKNode! = nil;
     private var musicOffBtn:SKNode! = nil;
     
     func createButtons(scene: SKScene) -> [SKNode]{
         var nodes = [SKNode]();
-        let bounceUp = SKAction.moveTo(y: 350, duration: 0.4);
-        let bounceDown = SKAction.moveTo(y: 335, duration: 0.4);
+        
+        let defaultPos = (positioning.getDeviceForPos() == "ipad") ? 60 : 40;
+        let bouncePos = positioning.convertPosition(point: CGPoint(x: defaultPos, y: defaultPos), scene: scene, relativePoint: "topRight");
+        let bounceUp = SKAction.moveTo(y: bouncePos.y, duration: 0.4);
+        let bounceDown = SKAction.moveTo(y: bouncePos.y-10, duration: 0.4);
         let cycle = SKAction.sequence([bounceUp , bounceDown]);
         let bounce = SKAction.repeatForever(cycle);
         
         musicOnBtn = SKSpriteNode(imageNamed: "MusicOn");
         musicOnBtn.name = "MusicOn";
-        musicOnBtn.position = CGPoint(x: 190, y: 350);
+        musicOnBtn?.position = positioning.convertPosition(point: CGPoint(x: defaultPos, y: defaultPos), scene: scene, relativePoint: "topRight");
         musicOnBtn.zPosition = 4;
-        musicOnBtn.setScale(0.8);
+        musicOnBtn.setScale(1);
         musicOnBtn.run(bounce, withKey: "bounce");
         
         
         musicOffBtn = SKSpriteNode(imageNamed: "MusicOff");
         musicOffBtn.name = "MusicOff";
-        musicOffBtn.position = CGPoint(x: 190, y: 346);
+        musicOffBtn?.position = positioning.convertPosition(point: CGPoint(x: defaultPos, y: defaultPos), scene: scene, relativePoint: "topRight");
         musicOffBtn.zPosition = 4;
-        musicOffBtn.setScale(0.8);
+        musicOffBtn.setScale(1);
         
         scene.addChild(musicOnBtn);
         

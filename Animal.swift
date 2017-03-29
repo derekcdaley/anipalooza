@@ -31,8 +31,8 @@ class Animal: SKSpriteNode {
                     let wiggle = SKAction.repeatForever(cycle)
                     animal.run(wiggle, withKey: "wiggle")
                     
-                    animal.xScale = 0.4;
-                    animal.yScale = 0.4;
+                    animal.xScale = 0.5;
+                    animal.yScale = 0.5;
                     animal.zPosition = 4;
                     
                     animalNodes.append(animal);

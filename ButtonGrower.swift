@@ -11,8 +11,8 @@ import SpriteKit
 class ButtonGrower {
     
     func animateGrowing(sknode: SKNode)-> SKNode {
-        let larger = SKAction.scale(to: 0.7, duration: 0.35);
-        let smaller = SKAction.scale(to: 0.65, duration: 0.35);
+        let larger = SKAction.scale(to: 0.8, duration: 0.35);
+        let smaller = SKAction.scale(to: 0.75, duration: 0.35);
         let cycle = SKAction.sequence([larger , smaller]);
         let grower = SKAction.repeatForever(cycle);
         

@@ -55,6 +55,7 @@
 		651B3F781E7D90F100FBB7DA /* rabbit_anm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 651B3F771E7D90F100FBB7DA /* rabbit_anm.wav */; };
 		6525884B1E7B688D00543B65 /* elephant_anm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6525884A1E7B688D00543B65 /* elephant_anm.wav */; };
 		652588501E7B7BC300543B65 /* AnimalSounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6525884F1E7B7BC300543B65 /* AnimalSounds.swift */; };
+		656FAE591E8A05D600D37F81 /* Positioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FAE581E8A05D600D37F81 /* Positioning.swift */; };
 		65A9267C1E84554D00495455 /* StartBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A9267B1E84554D00495455 /* StartBtn.png */; };
 		65A9267E1E8455F000495455 /* ButtonGrower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A9267D1E8455F000495455 /* ButtonGrower.swift */; };
 		65A926801E845B3300495455 /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A9267F1E845B3300495455 /* StartButton.swift */; };
@@ -64,7 +65,6 @@
 		65E934F21E7B8B3900B4F9A9 /* main.wav in Resources */ = {isa = PBXBuildFile; fileRef = 65E934F11E7B8B3900B4F9A9 /* main.wav */; };
 		65F862FC1E7A1F78007CFB56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F862FB1E7A1F78007CFB56 /* AppDelegate.swift */; };
 		65F863001E7A1F78007CFB56 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 65F862FF1E7A1F78007CFB56 /* Actions.sks */; };
-		65F863021E7A1F78007CFB56 /* GameScene.sks in Sources */ = {isa = PBXBuildFile; fileRef = 65F863011E7A1F78007CFB56 /* GameScene.sks */; };
 		65F863041E7A1F78007CFB56 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F863031E7A1F78007CFB56 /* GameViewController.swift */; };
 		65F863071E7A1F78007CFB56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F863051E7A1F78007CFB56 /* Main.storyboard */; };
 		65F863091E7A1F78007CFB56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F863081E7A1F78007CFB56 /* Assets.xcassets */; };
@@ -135,6 +135,7 @@
 		651B3F771E7D90F100FBB7DA /* rabbit_anm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rabbit_anm.wav; sourceTree = "<group>"; };
 		6525884A1E7B688D00543B65 /* elephant_anm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = elephant_anm.wav; sourceTree = "<group>"; };
 		6525884F1E7B7BC300543B65 /* AnimalSounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalSounds.swift; sourceTree = "<group>"; };
+		656FAE581E8A05D600D37F81 /* Positioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Positioning.swift; sourceTree = "<group>"; };
 		65A9267B1E84554D00495455 /* StartBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartBtn.png; sourceTree = "<group>"; };
 		65A9267D1E8455F000495455 /* ButtonGrower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonGrower.swift; sourceTree = "<group>"; };
 		65A9267F1E845B3300495455 /* StartButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
@@ -145,7 +146,6 @@
 		65F862F81E7A1F78007CFB56 /* AniPalooza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AniPalooza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F862FB1E7A1F78007CFB56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = AniPalooza/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		65F862FF1E7A1F78007CFB56 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Actions.sks; path = AniPalooza/Actions.sks; sourceTree = SOURCE_ROOT; };
-		65F863011E7A1F78007CFB56 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = GameScene.sks; path = AniPalooza/GameScene.sks; sourceTree = SOURCE_ROOT; };
 		65F863031E7A1F78007CFB56 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = AniPalooza/GameViewController.swift; sourceTree = SOURCE_ROOT; };
 		65F863061E7A1F78007CFB56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65F863081E7A1F78007CFB56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = AniPalooza/Assets.xcassets; sourceTree = SOURCE_ROOT; };
@@ -213,6 +213,14 @@
 			name = "Animal Sounds";
 			sourceTree = "<group>";
 		};
+		656FAE571E8A05BA00D37F81 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				656FAE581E8A05D600D37F81 /* Positioning.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
 		65E934EC1E7B877300B4F9A9 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,7 +282,6 @@
 			children = (
 				65F862FB1E7A1F78007CFB56 /* AppDelegate.swift */,
 				65F862FF1E7A1F78007CFB56 /* Actions.sks */,
-				65F863011E7A1F78007CFB56 /* GameScene.sks */,
 				65F863031E7A1F78007CFB56 /* GameViewController.swift */,
 				65F863051E7A1F78007CFB56 /* Main.storyboard */,
 				65F863081E7A1F78007CFB56 /* Assets.xcassets */,
@@ -351,6 +358,7 @@
 		65F863341E7A2999007CFB56 /* GameClasses */ = {
 			isa = PBXGroup;
 			children = (
+				656FAE571E8A05BA00D37F81 /* Shared */,
 				651B3F621E7C823000FBB7DA /* Buttons */,
 				65E934EC1E7B877300B4F9A9 /* Sounds */,
 				65F863381E7A2AED007CFB56 /* Scene Classes */,
@@ -512,10 +520,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				651618BF1E81D2270045C098 /* MainMenuScene.swift in Sources */,
-				65F863021E7A1F78007CFB56 /* GameScene.sks in Sources */,
 				65E934EE1E7B878F00B4F9A9 /* BackgroundMusicController.swift in Sources */,
 				65A9267E1E8455F000495455 /* ButtonGrower.swift in Sources */,
 				65F8633A1E7A2B08007CFB56 /* Level1Scene.swift in Sources */,
+				656FAE591E8A05D600D37F81 /* Positioning.swift in Sources */,
 				651B3F661E7D6AB800FBB7DA /* RandomizeButton.swift in Sources */,
 				65F863041E7A1F78007CFB56 /* GameViewController.swift in Sources */,
 				65F862FC1E7A1F78007CFB56 /* AppDelegate.swift in Sources */,
@@ -657,7 +665,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.derekdaley.anipalooza1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -673,7 +681,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.derekdaley.anipalooza1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

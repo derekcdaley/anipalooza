@@ -37,14 +37,14 @@ class AnimalController: SKSpriteNode {
             var y = 0;
             switch(i){
                 case 0:
-                    x = -120;
-                    y = -30;
+                    x = -150;
+                    y = -50;
                 case 1:
-                    x = 120;
-                    y = -30;
+                    x = 150;
+                    y = -50;
                 case 2:
                     x = 0;
-                    y = -170;
+                    y = -210;
                 default:
                     x = 0;
                     y = 110;

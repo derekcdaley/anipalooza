@@ -15,6 +15,7 @@ class MainMenuScene: SKScene {
     private let settings = SettingsScene();
     private let buttonGrower = ButtonGrower();
     private let startButton = StartButton();
+    private let positioning = Positioning();
     
     override func didMove(to view: SKView) {
         self.initializeView();
@@ -54,6 +55,7 @@ class MainMenuScene: SKScene {
     
     func initializeView() {
         let musicPref = settings.defaults.string(forKey: "MusicPref");
+        let defaultPos = (positioning.getDeviceForPos() == "ipad") ? 70 : 40;
         
         //Used until levels are done
         startButton.createStartButton(scene: scene!);
@@ -63,7 +65,14 @@ class MainMenuScene: SKScene {
         }else{
             gameViewController.globalMusicStop();
         }
+        
+        setGearPosition(defaultPos: defaultPos);
     }
     
+    func setGearPosition(defaultPos: Int) {
+        let gear = scene?.childNode(withName: "Settings");
+        gear?.position = positioning.convertPosition(point: CGPoint(x: defaultPos, y: defaultPos), scene: self, relativePoint: "bottomRight");
+        
+    }
     
 }

@@ -16,8 +16,8 @@ class RandomizeButton {
         var btn:SKNode! = SKSpriteNode(imageNamed: "RandomizeBtn");
         
         btn.name = "RandomizeBtn";
-        btn.setScale(0.7);
-        btn.position.y = -330;
+        btn.setScale(0.8);
+        btn.position.y = -400;
         btn.zPosition = 4;
         btn = buttonGrower.animateGrowing(sknode: (btn));
         
