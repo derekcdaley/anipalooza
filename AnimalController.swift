@@ -32,29 +32,50 @@ class AnimalController: SKSpriteNode {
         animals = animal.createAnimals();
         animals = shuffle(animalssArray: animals);
         
-        for i in 0...3 {
-            var x = 0;
-            var y = 0;
-            switch(i){
+        if scene.name == "Level1Scene" {
+            for i in 0...3 {
+                var x = 0;
+                var y = 0;
+                switch(i){
+                    case 0:
+                        x = -150;
+                        y = -50;
+                    case 1:
+                        x = 150;
+                        y = -50;
+                    case 2:
+                        x = 0;
+                        y = -210;
+                    default:
+                        x = 0;
+                        y = 110;
+                }
+                animals[i].position = CGPoint(x: x, y: y);
+                scene.addChild(animals[i]);
+            }
+        }else if scene.name == "Level2Scene" {
+            for i in 0...3 {
+                var x = 0;
+                var y = 0;
+                switch(i){
                 case 0:
                     x = -150;
-                    y = -50;
+                    y = -150;
                 case 1:
                     x = 150;
-                    y = -50;
+                    y = -150;
                 case 2:
-                    x = 0;
-                    y = -210;
+                    x = -150;
+                    y = -350;
                 default:
-                    x = 0;
-                    y = 110;
+                    x = 150;
+                    y = -350;
+                }
+                animals[i].position = CGPoint(x: x, y: y);
+                scene.addChild(animals[i]);
             }
-            animals[i].position = CGPoint(x: x, y: y);
-            scene.addChild(animals[i]);
         }
     }
-    
-    
-    
 }
+
 

@@ -12,8 +12,7 @@ import AVFoundation
 class AnimalSounds: SKSpriteNode {
     private var audioPlayer: AVAudioPlayer!
     
-    func retrieveSoundEffect(animalTapped: SKNode, location: CGPoint, touchedNode: String) -> AVAudioPlayer {
-        if (animalTapped.contains(location)) {
+    func retrieveSoundEffect(touchedNode: String) -> AVAudioPlayer {
             let soundName = touchedNode;
             let path = Bundle.main.path(forResource: ("\(soundName).wav"), ofType:nil)!
             let url = URL(fileURLWithPath: path);
@@ -37,7 +36,8 @@ class AnimalSounds: SKSpriteNode {
             } catch {
                 // couldn't load file :(
             }
-        }
         return audioPlayer;
     }
+    
+    
 }
