@@ -1,0 +1,1 @@
+Please use any source code from this project except the media and images. The media and images are not for reuse. Furthermore, this application already exists in the App Store and will be legally disputed if duplications occur.
