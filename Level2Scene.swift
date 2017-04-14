@@ -75,6 +75,9 @@ class Level2Scene: SKScene {
         let musicPref = settings.defaults.string(forKey: "MusicPref");
         let defaultPos = (positioning.getDeviceForPos() == "ipad") ? 70 : 40;
         
+        getScoreLabels();
+        ScoringController.instance.initializeVariables();
+        
         animalController.arrangeAnimalsInScene(scene: self.scene!);
         playSoundButton.createPlaySoundButton(scene: self.scene!);
         musicButtons = musicButton.createButtons(scene: self.scene!);
@@ -87,12 +90,19 @@ class Level2Scene: SKScene {
         var sound:AVAudioPlayer! = nil;
         if node.name == playButton.soundName{
             sound = notificationSound.retrieveSoundEffect(notification: "correct");
-            playButton.removeFromParent();
-            randonmizeButton.retrieveDifferentAnimals(scene: self.scene!);
-            playSoundButton.createPlaySoundButton(scene: self.scene!);
+            ScoringController.instance.incrementScore();
         }else{
             sound = notificationSound.retrieveSoundEffect(notification: "incorrect");
         }
+        ScoringController.instance.incrementAttempt();
+        playButton.removeFromParent();
+        randonmizeButton.retrieveDifferentAnimals(scene: self.scene!);
+        playSoundButton.createPlaySoundButton(scene: self.scene!);
         sound.play();
+    }
+    
+    func getScoreLabels() {
+        ScoringController.instance.level2ScoringText = self.childNode(withName: "ScoreNumber") as? SKLabelNode;
+        ScoringController.instance.level2AttemptsText = self.childNode(withName: "ScoreAttempt") as? SKLabelNode;
     }
 }

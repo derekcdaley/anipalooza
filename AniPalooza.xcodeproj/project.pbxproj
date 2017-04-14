@@ -70,6 +70,8 @@
 		65A263A21E8ED86800BE86AE /* incorrect.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 65A2639E1E8ED28E00BE86AE /* incorrect.m4a */; };
 		65A9267E1E8455F000495455 /* ButtonGrower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A9267D1E8455F000495455 /* ButtonGrower.swift */; };
 		65A926801E845B3300495455 /* HomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A9267F1E845B3300495455 /* HomeButton.swift */; };
+		65B2C0BA1E8F37C000F79FD7 /* ScoringController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B2C0B91E8F37C000F79FD7 /* ScoringController.swift */; };
+		65B2C0BC1E8F3A2200F79FD7 /* ScoringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B2C0BB1E8F3A2200F79FD7 /* ScoringManager.swift */; };
 		65E934E91E7B849100B4F9A9 /* hippo_anm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 65E934E81E7B849100B4F9A9 /* hippo_anm.wav */; };
 		65E934EB1E7B85B100B4F9A9 /* monkey_anm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 65E934EA1E7B85B100B4F9A9 /* monkey_anm.wav */; };
 		65E934EE1E7B878F00B4F9A9 /* BackgroundMusicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E934ED1E7B878F00B4F9A9 /* BackgroundMusicController.swift */; };
@@ -160,6 +162,8 @@
 		65A2639F1E8ED2DF00BE86AE /* NotifcationSounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotifcationSounds.swift; sourceTree = "<group>"; };
 		65A9267D1E8455F000495455 /* ButtonGrower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonGrower.swift; sourceTree = "<group>"; };
 		65A9267F1E845B3300495455 /* HomeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeButton.swift; sourceTree = "<group>"; };
+		65B2C0B91E8F37C000F79FD7 /* ScoringController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoringController.swift; sourceTree = "<group>"; };
+		65B2C0BB1E8F3A2200F79FD7 /* ScoringManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoringManager.swift; sourceTree = "<group>"; };
 		65E934E81E7B849100B4F9A9 /* hippo_anm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hippo_anm.wav; sourceTree = "<group>"; };
 		65E934EA1E7B85B100B4F9A9 /* monkey_anm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = monkey_anm.wav; sourceTree = "<group>"; };
 		65E934ED1E7B878F00B4F9A9 /* BackgroundMusicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundMusicController.swift; sourceTree = "<group>"; };
@@ -250,6 +254,15 @@
 				65A2639E1E8ED28E00BE86AE /* incorrect.m4a */,
 			);
 			name = Notify;
+			sourceTree = "<group>";
+		};
+		65B2C0B81E8F379D00F79FD7 /* Scoring */ = {
+			isa = PBXGroup;
+			children = (
+				65B2C0B91E8F37C000F79FD7 /* ScoringController.swift */,
+				65B2C0BB1E8F3A2200F79FD7 /* ScoringManager.swift */,
+			);
+			name = Scoring;
 			sourceTree = "<group>";
 		};
 		65E934EC1E7B877300B4F9A9 /* Sounds */ = {
@@ -395,6 +408,7 @@
 		65F863341E7A2999007CFB56 /* GameClasses */ = {
 			isa = PBXGroup;
 			children = (
+				65B2C0B81E8F379D00F79FD7 /* Scoring */,
 				656FAE571E8A05BA00D37F81 /* Shared */,
 				651B3F621E7C823000FBB7DA /* Buttons */,
 				65E934EC1E7B877300B4F9A9 /* Sounds */,
@@ -568,6 +582,7 @@
 				65A263A01E8ED2DF00BE86AE /* NotifcationSounds.swift in Sources */,
 				65A2639B1E8E06A400BE86AE /* CustomNode.swift in Sources */,
 				65A9267E1E8455F000495455 /* ButtonGrower.swift in Sources */,
+				65B2C0BA1E8F37C000F79FD7 /* ScoringController.swift in Sources */,
 				65F8633A1E7A2B08007CFB56 /* Level1Scene.swift in Sources */,
 				656FAE591E8A05D600D37F81 /* Positioning.swift in Sources */,
 				651B3F661E7D6AB800FBB7DA /* RandomizeButton.swift in Sources */,
@@ -577,6 +592,7 @@
 				65F863361E7A29D9007CFB56 /* AnimalController.swift in Sources */,
 				651618F01E82E14B0045C098 /* SettingsScene.swift in Sources */,
 				65A2638F1E8CA0D500BE86AE /* PlaySoundButton.swift in Sources */,
+				65B2C0BC1E8F3A2200F79FD7 /* ScoringManager.swift in Sources */,
 				65A926801E845B3300495455 /* HomeButton.swift in Sources */,
 				65A263891E8C5EB100BE86AE /* Level2Scene.swift in Sources */,
 				652588501E7B7BC300543B65 /* AnimalSounds.swift in Sources */,

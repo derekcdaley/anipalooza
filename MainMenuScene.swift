@@ -36,7 +36,9 @@ class MainMenuScene: SKScene {
                 
                 if touchedNode.name == "Level2" {
                     let scene = Level2Scene(fileNamed: "Level2Scene");
-                    scene!.scaleMode = .aspectFill
+                    scene!.scaleMode = .aspectFill;
+                    
+                    ScoringManager.instance.level2Started = true;
                     
                     self.view?.presentScene(scene!, transition: SKTransition.doorsOpenVertical(withDuration: 1.0));
                 }
