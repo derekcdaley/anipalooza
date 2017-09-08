@@ -15,6 +15,7 @@ class Level1Scene: SKScene {
     private let musicButton = MusicButton();
     private let randomizeBtn = RandomizeButton();
     private let settings = SettingsScene();
+    private let positioning = Positioning();
     
     private var bgMusic = BackgroundMusicController();
     private var musicButtons = [SKNode]();
@@ -36,6 +37,7 @@ class Level1Scene: SKScene {
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        var tapCount = 0;
         let animalSounds = AnimalSounds();
         
         for touch in touches {
@@ -64,12 +66,17 @@ class Level1Scene: SKScene {
                 }
                 
                 //if home button tapped, go home
-                if (touchedNode.name?.contains("Home"))!{
+                if touchedNode.name == "Home" ||
+                    touchedNode.parent?.name == "Home"{
+                    tapCount = touch.tapCount;
                     
-                    let scene = MainMenuScene(fileNamed: "MainMenuScene");
-                    scene!.scaleMode = .aspectFill
-                        
-                    self.view?.presentScene(scene!, transition: SKTransition.doorsCloseVertical(withDuration: 1.0));
+                    if tapCount == 1 {
+                        singleTapHome();
+                    }else if tapCount == 2 {
+                        let scene = MainMenuScene(fileNamed: "MainMenuScene");
+                        scene!.scaleMode = .aspectFill
+                        self.view?.presentScene(scene!, transition: SKTransition.doorsCloseVertical(withDuration: 1.0));
+                    }
                 }
                 
             }
@@ -81,12 +88,29 @@ class Level1Scene: SKScene {
     
     func intializeView(){
         let musicPref = settings.defaults.string(forKey: "MusicPref");
+        let defaultPos = (positioning.getDeviceForPos() == "ipad") ? 70 : 40;
         
         animalController.arrangeAnimalsInScene(scene: self.scene!);
         musicButtons = musicButton.createButtons(scene: self.scene!);
         randomizeBtn.createRandomizeButton(scene: self.scene!);
         
         bgMusic.toggleMusic(musicOnOff: musicPref!, scene: self.scene!, musicButtons: musicButtons);
+        
+        setHomePosition(defaultPos: defaultPos);
+    }
+    
+    func setHomePosition(defaultPos: Int) {
+        let home = scene?.childNode(withName: "Home");
+        home?.position = positioning.convertPosition(point: CGPoint(x: defaultPos, y: defaultPos), scene: self, relativePoint: "topLeft");
+    }
+    
+    func singleTapHome(){
+        let homeIns = self.scene?.childNode(withName: "Home")?.children[0];
+        let fadeIn = SKAction.fadeAlpha(to: 1.0, duration: 0.5);
+        let fadeOut = SKAction.fadeAlpha(to: 0.0, duration: 0.5);
+        let cycle = SKAction.sequence([fadeIn , fadeOut]);
+        let action = SKAction.repeat(cycle, count: 1);
+        homeIns!.run(action, withKey: "action");
     }
 }
 

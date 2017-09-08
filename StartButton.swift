@@ -15,9 +15,9 @@ class StartButton {
         var btn:SKNode! = SKSpriteNode(imageNamed: "StartBtn");
         
         btn.name = "Level1";
-        btn.setScale(0.7);
+        btn.setScale(0.8);
         btn.position.x = 0;
-        btn.position.y = -193.2;
+        btn.position.y = -250;
         btn.zPosition = 4;
         btn = buttonGrower.animateGrowing(sknode: (btn));
         

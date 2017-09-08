@@ -10,8 +10,10 @@ import SpriteKit
 import AVFoundation
 
 class SettingsScene: SKScene {
-    let defaults = UserDefaults.standard;
     private let bgMusic = BackgroundMusicController();
+    private let positioning = Positioning();
+    
+    let defaults = UserDefaults.standard;
     
     private var offBtn: SKNode? = nil;
     private var onBtn: SKNode? = nil;
@@ -22,7 +24,6 @@ class SettingsScene: SKScene {
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
         for touch in touches {
             let location = touch.location(in: self);
             let touchedNode = self.atPoint(location);
@@ -30,7 +31,6 @@ class SettingsScene: SKScene {
             if touchedNode.name != nil {
                 //if home button tapped, go home
                 if touchedNode.name == "Home" {
-                    
                     let scene = MainMenuScene(fileNamed: "MainMenuScene");
                     scene!.scaleMode = .aspectFill;
                     
@@ -62,6 +62,7 @@ class SettingsScene: SKScene {
     
     func initializeView() {
         let musicPref = defaults.string(forKey: "MusicPref");
+        let defaultPos = (positioning.getDeviceForPos() == "ipad") ? 70 : 40;
         
         offBtn = self.scene?.childNode(withName: "MusicOffBtn");
         onBtn = self.scene?.childNode(withName: "MusicOnBtn");
@@ -72,6 +73,8 @@ class SettingsScene: SKScene {
         }else{
             tappedOffBtn();
         }
+        
+        setHomePosition(defaultPos: defaultPos);
         
     }
     
@@ -85,5 +88,10 @@ class SettingsScene: SKScene {
         offBtn?.alpha = 0.5;
         onBtn?.alpha = 1;
         musicPlayer.stop();
+    }
+    
+    func setHomePosition(defaultPos: Int) {
+        let home = scene?.childNode(withName: "Home");
+        home?.position = positioning.convertPosition(point: CGPoint(x: defaultPos, y: defaultPos), scene: self, relativePoint: "topLeft");
     }
 }
