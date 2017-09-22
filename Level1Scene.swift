@@ -20,6 +20,7 @@ class Level1Scene: SKScene {
     
     private var bgMusic = BackgroundMusicController();
     private var musicButtons = [SKNode]();
+    private var timeAtPress : NSDate? = nil
     
     
     var soundPlayer: AVAudioPlayer! = nil;
@@ -47,14 +48,6 @@ class Level1Scene: SKScene {
             let randomBtn = RandomizeButton();
             
             if touchedNode.name != nil {
-                //if animal tapped, play sound
-                if (touchedNode.name?.contains("_anm"))! {
-                    let touched = self.childNode(withName: touchedNode.name!);
-                    if (touched!.contains(location)) {
-                        soundPlayer = animalSounds.retrieveSoundEffect(touchedNode: touchedNode.name!);
-                        soundPlayer.play();
-                    }
-                }
                 
                 //if music button tapped, toggle music
                 if (touchedNode.name?.contains("Music"))!{
@@ -77,6 +70,28 @@ class Level1Scene: SKScene {
                         homeButton.singleTapHome(scene: self);
                     }else if tapCount == 2 {
                         homeButton.doubleTapHome(scene: self);
+                    }
+                }
+                
+                
+                //debounce all actions after this
+                if (timeAtPress == nil){
+                    timeAtPress = NSDate();
+                }else{
+                    let elapsed = NSDate().timeIntervalSince(timeAtPress! as Date);
+                    if (elapsed < 1.0){
+                        return;
+                    }else{
+                        timeAtPress = nil;
+                    }
+                }
+                
+                //if animal tapped, play sound
+                if (touchedNode.name?.contains("_anm"))! {
+                    let touched = self.childNode(withName: touchedNode.name!);
+                    if (touched!.contains(location)) {
+                        soundPlayer = animalSounds.retrieveSoundEffect(touchedNode: touchedNode.name!);
+                        soundPlayer.play();
                     }
                 }
                 

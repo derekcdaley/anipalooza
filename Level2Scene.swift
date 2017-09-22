@@ -21,6 +21,7 @@ class Level2Scene: SKScene {
     
     private var bgMusic = BackgroundMusicController();
     private var musicButtons = [SKNode]();
+    private var timeAtPress : NSDate? = nil
     
     override func didMove(to view: SKView) {
         self.intializeView();
@@ -34,6 +35,7 @@ class Level2Scene: SKScene {
             let touchedNode = self.atPoint(location);
             
             if touchedNode.name != nil {
+                
                 //if home button tapped, go home
                 if touchedNode.name == "Home" ||
                     touchedNode.parent?.name == "Home"{
@@ -53,14 +55,26 @@ class Level2Scene: SKScene {
                     bgMusic.toggleMusic(musicOnOff: musicOnOff, scene: self.scene!, musicButtons: musicButtons);
                 }
                 
+                //debounce all actions after this
+                if (timeAtPress == nil){
+                    timeAtPress = NSDate();
+                }else{
+                    let elapsed = NSDate().timeIntervalSince(timeAtPress! as Date);
+                    if (elapsed < 1.0){
+                        return;
+                    }else{
+                        timeAtPress = nil;
+                    }
+                }
                 if (touchedNode.name?.contains("_anm"))! {
+
                     let touched = self.childNode(withName: touchedNode.name!);
                     if (touched!.contains(location)) {
                         isTouchedAnimalCorrect(node: touchedNode);
                     }
                 }
                 
-                //if music button tapped, toggle music
+                //if play sound button tapped
                 if touchedNode.name == "PlaySoundBtn" {
                     playSoundButton.generateRandomSound(scene: self);
                 }
@@ -91,13 +105,14 @@ class Level2Scene: SKScene {
         if node.name == playButton.soundName{
             sound = notificationSound.retrieveSoundEffect(notification: "correct");
             ScoringController.instance.incrementScore();
+            
+            playButton.removeFromParent();
+            randonmizeButton.retrieveDifferentAnimals(scene: self.scene!);
+            playSoundButton.createPlaySoundButton(scene: self.scene!);
         }else{
             sound = notificationSound.retrieveSoundEffect(notification: "incorrect");
         }
         ScoringController.instance.incrementAttempt();
-        playButton.removeFromParent();
-        randonmizeButton.retrieveDifferentAnimals(scene: self.scene!);
-        playSoundButton.createPlaySoundButton(scene: self.scene!);
         sound.play();
     }
     

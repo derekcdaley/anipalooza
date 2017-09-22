@@ -60,16 +60,16 @@ class AnimalController: SKSpriteNode {
                 switch(i){
                 case 0:
                     x = -150;
-                    y = -150;
+                    y = -130;
                 case 1:
                     x = 150;
-                    y = -150;
+                    y = -130;
                 case 2:
                     x = -150;
-                    y = -350;
+                    y = -330;
                 default:
                     x = 150;
-                    y = -350;
+                    y = -330;
                 }
                 animals[i].position = CGPoint(x: x, y: y);
                 scene.addChild(animals[i]);

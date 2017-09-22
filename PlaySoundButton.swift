@@ -35,7 +35,7 @@ class PlaySoundButton {
         btn.name = "PlaySoundBtn";
         btn.soundName = setAnimalSound.name!;
         btn.setScale(scale);
-        btn.position.y = 85;
+        btn.position.y = 105;
         btn.zPosition = 4;
         btn = buttonGrower.animateGrowing(sknode: (btn), scale: scale) as! CustomNode;
         scene.addChild(btn);
