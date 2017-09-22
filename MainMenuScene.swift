@@ -14,7 +14,6 @@ class MainMenuScene: SKScene {
     private let gameViewController = GameViewController();
     private let settings = SettingsScene();
     private let buttonGrower = ButtonGrower();
-    private let startButton = StartButton();
     private let positioning = Positioning();
     
     override func didMove(to view: SKView) {
@@ -29,10 +28,18 @@ class MainMenuScene: SKScene {
             
             if touchedNode.name != nil {
                 if touchedNode.name == "Level1" {
-                    
                     let scene = Level1Scene(fileNamed: "Level1Scene");
                     scene!.scaleMode = .aspectFill
 
+                    self.view?.presentScene(scene!, transition: SKTransition.doorsOpenVertical(withDuration: 1.0));
+                }
+                
+                if touchedNode.name == "Level2" {
+                    let scene = Level2Scene(fileNamed: "Level2Scene");
+                    scene!.scaleMode = .aspectFill;
+                    
+                    ScoringManager.instance.level2Started = true;
+                    
                     self.view?.presentScene(scene!, transition: SKTransition.doorsOpenVertical(withDuration: 1.0));
                 }
                 
@@ -56,9 +63,6 @@ class MainMenuScene: SKScene {
     func initializeView() {
         let musicPref = settings.defaults.string(forKey: "MusicPref");
         let defaultPos = (positioning.getDeviceForPos() == "ipad") ? 70 : 40;
-        
-        //Used until levels are done
-        startButton.createStartButton(scene: scene!);
         
         if musicPref == "On"{
             gameViewController.globalMusicStart();

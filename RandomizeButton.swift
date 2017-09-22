@@ -13,18 +13,19 @@ class RandomizeButton {
     private let buttonGrower = ButtonGrower();
     
     func createRandomizeButton(scene: SKScene) {
-        var btn:SKNode! = SKSpriteNode(imageNamed: "RandomizeBtn");
+        var btn:SKNode! = SKSpriteNode(imageNamed: "randomizebtn");
+        let scale = CGFloat(0.8);
         
         btn.name = "RandomizeBtn";
-        btn.setScale(0.8);
+        btn.setScale(scale);
         btn.position.y = -400;
         btn.zPosition = 4;
-        btn = buttonGrower.animateGrowing(sknode: (btn));
+        btn = buttonGrower.animateGrowing(sknode: (btn), scale: scale);
         
         scene.addChild(btn);
     }
     
-    func retrieveDifferentAnimals(touchedNode: SKNode, scene: SKScene) {
+    func retrieveDifferentAnimals(scene: SKScene) {
         for child in scene.children {
             //Determine Details
             if (child.name != nil && (child.name?.contains("_anm"))!) {

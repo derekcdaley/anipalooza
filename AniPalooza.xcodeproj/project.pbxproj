@@ -27,9 +27,9 @@
 		651618B91E81AAC10045C098 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618B81E81AAC10045C098 /* Default-568h@2x.png */; };
 		651618BB1E81D1420045C098 /* MainMenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 651618BA1E81D1420045C098 /* MainMenuScene.sks */; };
 		651618BF1E81D2270045C098 /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651618BE1E81D2270045C098 /* MainMenuScene.swift */; };
-		651618C71E820D860045C098 /* Level1Btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618C41E820D860045C098 /* Level1Btn.png */; };
-		651618C81E820D860045C098 /* Level2Btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618C51E820D860045C098 /* Level2Btn.png */; };
-		651618C91E820D860045C098 /* Level3Btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618C61E820D860045C098 /* Level3Btn.png */; };
+		651618C71E820D860045C098 /* level1btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618C41E820D860045C098 /* level1btn.png */; };
+		651618C81E820D860045C098 /* level2btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618C51E820D860045C098 /* level2btn.png */; };
+		651618C91E820D860045C098 /* level3btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618C61E820D860045C098 /* level3btn.png */; };
 		651618CE1E82153E0045C098 /* fence_piece.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618CC1E82153E0045C098 /* fence_piece.png */; };
 		651618CF1E82153E0045C098 /* fence.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618CD1E82153E0045C098 /* fence.png */; };
 		651618D11E8216E70045C098 /* house_beige_side.png in Resources */ = {isa = PBXBuildFile; fileRef = 651618D01E8216E70045C098 /* house_beige_side.png */; };
@@ -48,7 +48,7 @@
 		651618F61E8310AC0045C098 /* settings.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 651618F51E8310AC0045C098 /* settings.m4a */; };
 		651B3F641E7C825700FBB7DA /* MusicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651B3F631E7C825700FBB7DA /* MusicButton.swift */; };
 		651B3F661E7D6AB800FBB7DA /* RandomizeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651B3F651E7D6AB800FBB7DA /* RandomizeButton.swift */; };
-		651B3F6C1E7D79C900FBB7DA /* RandomizeBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 651B3F6B1E7D79C900FBB7DA /* RandomizeBtn.png */; };
+		651B3F6C1E7D79C900FBB7DA /* randomizebtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 651B3F6B1E7D79C900FBB7DA /* randomizebtn.png */; };
 		651B3F721E7D89A300FBB7DA /* parrot_anm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 651B3F711E7D89A300FBB7DA /* parrot_anm.wav */; };
 		651B3F741E7D8FAD00FBB7DA /* penguin_anm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 651B3F731E7D8FAD00FBB7DA /* penguin_anm.wav */; };
 		651B3F761E7D900400FBB7DA /* pig_anm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 651B3F751E7D900400FBB7DA /* pig_anm.wav */; };
@@ -56,9 +56,22 @@
 		6525884B1E7B688D00543B65 /* elephant_anm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6525884A1E7B688D00543B65 /* elephant_anm.wav */; };
 		652588501E7B7BC300543B65 /* AnimalSounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6525884F1E7B7BC300543B65 /* AnimalSounds.swift */; };
 		656FAE591E8A05D600D37F81 /* Positioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FAE581E8A05D600D37F81 /* Positioning.swift */; };
-		65A9267C1E84554D00495455 /* StartBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A9267B1E84554D00495455 /* StartBtn.png */; };
+		65A263891E8C5EB100BE86AE /* Level2Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A263881E8C5EB100BE86AE /* Level2Scene.swift */; };
+		65A2638B1E8C93DA00BE86AE /* Level1Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 65A2638A1E8C93DA00BE86AE /* Level1Scene.sks */; };
+		65A2638D1E8C93EF00BE86AE /* Level2Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 65A2638C1E8C93EF00BE86AE /* Level2Scene.sks */; };
+		65A2638F1E8CA0D500BE86AE /* PlaySoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A2638E1E8CA0D500BE86AE /* PlaySoundButton.swift */; };
+		65A263911E8CA14A00BE86AE /* playsoundbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A263901E8CA14A00BE86AE /* playsoundbtn.png */; };
+		65A263931E8DCF5A00BE86AE /* colored_forest.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A263921E8DCF5A00BE86AE /* colored_forest.png */; };
+		65A263951E8DD05500BE86AE /* moon_full.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A263941E8DD05500BE86AE /* moon_full.png */; };
+		65A263971E8DD07400BE86AE /* tree21.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A263961E8DD07400BE86AE /* tree21.png */; };
+		65A2639B1E8E06A400BE86AE /* CustomNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A2639A1E8E06A400BE86AE /* CustomNode.swift */; };
+		65A263A01E8ED2DF00BE86AE /* NotifcationSounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A2639F1E8ED2DF00BE86AE /* NotifcationSounds.swift */; };
+		65A263A11E8ED86500BE86AE /* correct.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 65A2639D1E8ED28E00BE86AE /* correct.m4a */; };
+		65A263A21E8ED86800BE86AE /* incorrect.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 65A2639E1E8ED28E00BE86AE /* incorrect.m4a */; };
 		65A9267E1E8455F000495455 /* ButtonGrower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A9267D1E8455F000495455 /* ButtonGrower.swift */; };
-		65A926801E845B3300495455 /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A9267F1E845B3300495455 /* StartButton.swift */; };
+		65A926801E845B3300495455 /* HomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A9267F1E845B3300495455 /* HomeButton.swift */; };
+		65B2C0BA1E8F37C000F79FD7 /* ScoringController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B2C0B91E8F37C000F79FD7 /* ScoringController.swift */; };
+		65B2C0BC1E8F3A2200F79FD7 /* ScoringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B2C0BB1E8F3A2200F79FD7 /* ScoringManager.swift */; };
 		65E934E91E7B849100B4F9A9 /* hippo_anm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 65E934E81E7B849100B4F9A9 /* hippo_anm.wav */; };
 		65E934EB1E7B85B100B4F9A9 /* monkey_anm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 65E934EA1E7B85B100B4F9A9 /* monkey_anm.wav */; };
 		65E934EE1E7B878F00B4F9A9 /* BackgroundMusicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E934ED1E7B878F00B4F9A9 /* BackgroundMusicController.swift */; };
@@ -79,7 +92,6 @@
 		65F863281E7A20CD007CFB56 /* rabbit.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F8631D1E7A20CD007CFB56 /* rabbit.png */; };
 		65F863291E7A20CD007CFB56 /* snake_anm.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F8631E1E7A20CD007CFB56 /* snake_anm.png */; };
 		65F8632E1E7A2203007CFB56 /* colored_talltrees.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F8632D1E7A2203007CFB56 /* colored_talltrees.png */; };
-		65F863311E7A229B007CFB56 /* Level1Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 65F863301E7A229B007CFB56 /* Level1Scene.sks */; };
 		65F863331E7A265B007CFB56 /* tree.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F863321E7A265B007CFB56 /* tree.png */; };
 		65F863361E7A29D9007CFB56 /* AnimalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F863351E7A29D9007CFB56 /* AnimalController.swift */; };
 		65F8633A1E7A2B08007CFB56 /* Level1Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F863391E7A2B08007CFB56 /* Level1Scene.swift */; };
@@ -107,9 +119,9 @@
 		651618B81E81AAC10045C098 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		651618BA1E81D1420045C098 /* MainMenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenuScene.sks; sourceTree = "<group>"; };
 		651618BE1E81D2270045C098 /* MainMenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
-		651618C41E820D860045C098 /* Level1Btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Level1Btn.png; sourceTree = "<group>"; };
-		651618C51E820D860045C098 /* Level2Btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Level2Btn.png; sourceTree = "<group>"; };
-		651618C61E820D860045C098 /* Level3Btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Level3Btn.png; sourceTree = "<group>"; };
+		651618C41E820D860045C098 /* level1btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level1btn.png; sourceTree = "<group>"; };
+		651618C51E820D860045C098 /* level2btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level2btn.png; sourceTree = "<group>"; };
+		651618C61E820D860045C098 /* level3btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level3btn.png; sourceTree = "<group>"; };
 		651618CC1E82153E0045C098 /* fence_piece.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fence_piece.png; path = "../../Downloads/Kenney Game Assets/Art/Background elements (110 assets)/PNG/fence_piece.png"; sourceTree = "<group>"; };
 		651618CD1E82153E0045C098 /* fence.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fence.png; path = "../../Downloads/Kenney Game Assets/Art/Background elements (110 assets)/PNG/fence.png"; sourceTree = "<group>"; };
 		651618D01E8216E70045C098 /* house_beige_side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = house_beige_side.png; path = "../../Downloads/Kenney Game Assets/Art/Background elements (110 assets)/PNG/house_beige_side.png"; sourceTree = "<group>"; };
@@ -128,7 +140,7 @@
 		651618F51E8310AC0045C098 /* settings.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = settings.m4a; sourceTree = "<group>"; };
 		651B3F631E7C825700FBB7DA /* MusicButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicButton.swift; sourceTree = "<group>"; };
 		651B3F651E7D6AB800FBB7DA /* RandomizeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomizeButton.swift; sourceTree = "<group>"; };
-		651B3F6B1E7D79C900FBB7DA /* RandomizeBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RandomizeBtn.png; sourceTree = "<group>"; };
+		651B3F6B1E7D79C900FBB7DA /* randomizebtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = randomizebtn.png; sourceTree = "<group>"; };
 		651B3F711E7D89A300FBB7DA /* parrot_anm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = parrot_anm.wav; sourceTree = "<group>"; };
 		651B3F731E7D8FAD00FBB7DA /* penguin_anm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = penguin_anm.wav; sourceTree = "<group>"; };
 		651B3F751E7D900400FBB7DA /* pig_anm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pig_anm.wav; sourceTree = "<group>"; };
@@ -136,9 +148,22 @@
 		6525884A1E7B688D00543B65 /* elephant_anm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = elephant_anm.wav; sourceTree = "<group>"; };
 		6525884F1E7B7BC300543B65 /* AnimalSounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalSounds.swift; sourceTree = "<group>"; };
 		656FAE581E8A05D600D37F81 /* Positioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Positioning.swift; sourceTree = "<group>"; };
-		65A9267B1E84554D00495455 /* StartBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartBtn.png; sourceTree = "<group>"; };
+		65A263881E8C5EB100BE86AE /* Level2Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level2Scene.swift; sourceTree = "<group>"; };
+		65A2638A1E8C93DA00BE86AE /* Level1Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level1Scene.sks; sourceTree = "<group>"; };
+		65A2638C1E8C93EF00BE86AE /* Level2Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level2Scene.sks; sourceTree = "<group>"; };
+		65A2638E1E8CA0D500BE86AE /* PlaySoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundButton.swift; sourceTree = "<group>"; };
+		65A263901E8CA14A00BE86AE /* playsoundbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playsoundbtn.png; sourceTree = "<group>"; };
+		65A263921E8DCF5A00BE86AE /* colored_forest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colored_forest.png; sourceTree = "<group>"; };
+		65A263941E8DD05500BE86AE /* moon_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moon_full.png; sourceTree = "<group>"; };
+		65A263961E8DD07400BE86AE /* tree21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tree21.png; sourceTree = "<group>"; };
+		65A2639A1E8E06A400BE86AE /* CustomNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNode.swift; sourceTree = "<group>"; };
+		65A2639D1E8ED28E00BE86AE /* correct.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = correct.m4a; sourceTree = "<group>"; };
+		65A2639E1E8ED28E00BE86AE /* incorrect.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = incorrect.m4a; sourceTree = "<group>"; };
+		65A2639F1E8ED2DF00BE86AE /* NotifcationSounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotifcationSounds.swift; sourceTree = "<group>"; };
 		65A9267D1E8455F000495455 /* ButtonGrower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonGrower.swift; sourceTree = "<group>"; };
-		65A9267F1E845B3300495455 /* StartButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
+		65A9267F1E845B3300495455 /* HomeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeButton.swift; sourceTree = "<group>"; };
+		65B2C0B91E8F37C000F79FD7 /* ScoringController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoringController.swift; sourceTree = "<group>"; };
+		65B2C0BB1E8F3A2200F79FD7 /* ScoringManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoringManager.swift; sourceTree = "<group>"; };
 		65E934E81E7B849100B4F9A9 /* hippo_anm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hippo_anm.wav; sourceTree = "<group>"; };
 		65E934EA1E7B85B100B4F9A9 /* monkey_anm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = monkey_anm.wav; sourceTree = "<group>"; };
 		65E934ED1E7B878F00B4F9A9 /* BackgroundMusicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundMusicController.swift; sourceTree = "<group>"; };
@@ -161,7 +186,6 @@
 		65F8631D1E7A20CD007CFB56 /* rabbit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rabbit.png; sourceTree = "<group>"; };
 		65F8631E1E7A20CD007CFB56 /* snake_anm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snake_anm.png; sourceTree = "<group>"; };
 		65F8632D1E7A2203007CFB56 /* colored_talltrees.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colored_talltrees.png; sourceTree = "<group>"; };
-		65F863301E7A229B007CFB56 /* Level1Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level1Scene.sks; sourceTree = "<group>"; };
 		65F863321E7A265B007CFB56 /* tree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tree.png; sourceTree = "<group>"; };
 		65F863351E7A29D9007CFB56 /* AnimalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalController.swift; sourceTree = "<group>"; };
 		65F863391E7A2B08007CFB56 /* Level1Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level1Scene.swift; sourceTree = "<group>"; };
@@ -185,7 +209,8 @@
 				651B3F631E7C825700FBB7DA /* MusicButton.swift */,
 				651B3F651E7D6AB800FBB7DA /* RandomizeButton.swift */,
 				65A9267D1E8455F000495455 /* ButtonGrower.swift */,
-				65A9267F1E845B3300495455 /* StartButton.swift */,
+				65A9267F1E845B3300495455 /* HomeButton.swift */,
+				65A2638E1E8CA0D500BE86AE /* PlaySoundButton.swift */,
 			);
 			name = Buttons;
 			sourceTree = "<group>";
@@ -217,8 +242,27 @@
 			isa = PBXGroup;
 			children = (
 				656FAE581E8A05D600D37F81 /* Positioning.swift */,
+				65A2639A1E8E06A400BE86AE /* CustomNode.swift */,
 			);
 			name = Shared;
+			sourceTree = "<group>";
+		};
+		65A2639C1E8ED27E00BE86AE /* Notify */ = {
+			isa = PBXGroup;
+			children = (
+				65A2639D1E8ED28E00BE86AE /* correct.m4a */,
+				65A2639E1E8ED28E00BE86AE /* incorrect.m4a */,
+			);
+			name = Notify;
+			sourceTree = "<group>";
+		};
+		65B2C0B81E8F379D00F79FD7 /* Scoring */ = {
+			isa = PBXGroup;
+			children = (
+				65B2C0B91E8F37C000F79FD7 /* ScoringController.swift */,
+				65B2C0BB1E8F3A2200F79FD7 /* ScoringManager.swift */,
+			);
+			name = Scoring;
 			sourceTree = "<group>";
 		};
 		65E934EC1E7B877300B4F9A9 /* Sounds */ = {
@@ -226,6 +270,7 @@
 			children = (
 				6525884F1E7B7BC300543B65 /* AnimalSounds.swift */,
 				65E934ED1E7B878F00B4F9A9 /* BackgroundMusicController.swift */,
+				65A2639F1E8ED2DF00BE86AE /* NotifcationSounds.swift */,
 			);
 			name = Sounds;
 			sourceTree = "<group>";
@@ -242,14 +287,14 @@
 		65E934F31E7C243A00B4F9A9 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				65A9267B1E84554D00495455 /* StartBtn.png */,
+				65A263901E8CA14A00BE86AE /* playsoundbtn.png */,
 				651618E31E82D7690045C098 /* home.png */,
 				651618E41E82D7690045C098 /* MusicOff.png */,
 				651618E51E82D7690045C098 /* MusicOn.png */,
-				651618C41E820D860045C098 /* Level1Btn.png */,
-				651618C51E820D860045C098 /* Level2Btn.png */,
-				651618C61E820D860045C098 /* Level3Btn.png */,
-				651B3F6B1E7D79C900FBB7DA /* RandomizeBtn.png */,
+				651618C41E820D860045C098 /* level1btn.png */,
+				651618C51E820D860045C098 /* level2btn.png */,
+				651618C61E820D860045C098 /* level3btn.png */,
+				651B3F6B1E7D79C900FBB7DA /* randomizebtn.png */,
 				651618E91E82D9D30045C098 /* gear.png */,
 				651618F11E8301F70045C098 /* MusicOffBtn.png */,
 				651618F21E8301F70045C098 /* MusicOnBtn.png */,
@@ -295,6 +340,7 @@
 		65F863131E7A2014007CFB56 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				65A2639C1E8ED27E00BE86AE /* Notify */,
 				65E934F31E7C243A00B4F9A9 /* Buttons */,
 				65E934EF1E7B880800B4F9A9 /* BG Music */,
 				652588491E7B686500543B65 /* Animal Sounds */,
@@ -332,6 +378,9 @@
 		65F8632B1E7A21DF007CFB56 /* Backgound */ = {
 			isa = PBXGroup;
 			children = (
+				65A263961E8DD07400BE86AE /* tree21.png */,
+				65A263941E8DD05500BE86AE /* moon_full.png */,
+				65A263921E8DCF5A00BE86AE /* colored_forest.png */,
 				651618EB1E82DC8C0045C098 /* colored_talltrees_grass.png */,
 				651618DC1E82C0B30045C098 /* cloud2.png */,
 				651618DA1E82223F0045C098 /* sun.png */,
@@ -349,7 +398,8 @@
 			isa = PBXGroup;
 			children = (
 				651618ED1E82DF200045C098 /* SettingsScene.sks */,
-				65F863301E7A229B007CFB56 /* Level1Scene.sks */,
+				65A2638C1E8C93EF00BE86AE /* Level2Scene.sks */,
+				65A2638A1E8C93DA00BE86AE /* Level1Scene.sks */,
 				651618BA1E81D1420045C098 /* MainMenuScene.sks */,
 			);
 			name = Scenes;
@@ -358,6 +408,7 @@
 		65F863341E7A2999007CFB56 /* GameClasses */ = {
 			isa = PBXGroup;
 			children = (
+				65B2C0B81E8F379D00F79FD7 /* Scoring */,
 				656FAE571E8A05BA00D37F81 /* Shared */,
 				651B3F621E7C823000FBB7DA /* Buttons */,
 				65E934EC1E7B877300B4F9A9 /* Sounds */,
@@ -380,6 +431,7 @@
 			isa = PBXGroup;
 			children = (
 				65F863391E7A2B08007CFB56 /* Level1Scene.swift */,
+				65A263881E8C5EB100BE86AE /* Level2Scene.swift */,
 				651618BE1E81D2270045C098 /* MainMenuScene.swift */,
 				651618EF1E82E14B0045C098 /* SettingsScene.swift */,
 			);
@@ -446,11 +498,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65F863311E7A229B007CFB56 /* Level1Scene.sks in Resources */,
-				651618C71E820D860045C098 /* Level1Btn.png in Resources */,
+				651618C71E820D860045C098 /* level1btn.png in Resources */,
 				651618A31E8182D50045C098 /* sheep_anm.wav in Resources */,
 				651618EC1E82DC8C0045C098 /* colored_talltrees_grass.png in Resources */,
 				6516188A1E7EF76A0045C098 /* horse_anm.png in Resources */,
+				65A263A21E8ED86800BE86AE /* incorrect.m4a in Resources */,
 				651618F31E8301F70045C098 /* MusicOffBtn.png in Resources */,
 				651618891E7EF76A0045C098 /* lion_anm.png in Resources */,
 				651618A71E8185AF0045C098 /* snake_anm.wav in Resources */,
@@ -465,9 +517,10 @@
 				651618B31E818EF40045C098 /* tiger_anm.wav in Resources */,
 				651618DD1E82C0B30045C098 /* cloud2.png in Resources */,
 				651B3F741E7D8FAD00FBB7DA /* penguin_anm.wav in Resources */,
-				651618C91E820D860045C098 /* Level3Btn.png in Resources */,
+				651618C91E820D860045C098 /* level3btn.png in Resources */,
 				65F863091E7A1F78007CFB56 /* Assets.xcassets in Resources */,
 				651618D11E8216E70045C098 /* house_beige_side.png in Resources */,
+				65A263A11E8ED86500BE86AE /* correct.m4a in Resources */,
 				651618CF1E82153E0045C098 /* fence.png in Resources */,
 				651618EE1E82DF200045C098 /* SettingsScene.sks in Resources */,
 				651618B91E81AAC10045C098 /* Default-568h@2x.png in Resources */,
@@ -480,23 +533,28 @@
 				651618BB1E81D1420045C098 /* MainMenuScene.sks in Resources */,
 				6516188D1E7EF76A0045C098 /* bear_anm.png in Resources */,
 				651618811E7EF7360045C098 /* cat_anm.png in Resources */,
+				65A263971E8DD07400BE86AE /* tree21.png in Resources */,
 				65F863221E7A20CD007CFB56 /* hippo.png in Resources */,
+				65A263931E8DCF5A00BE86AE /* colored_forest.png in Resources */,
 				65F863291E7A20CD007CFB56 /* snake_anm.png in Resources */,
 				651618E81E82D7690045C098 /* MusicOn.png in Resources */,
+				65A2638B1E8C93DA00BE86AE /* Level1Scene.sks in Resources */,
 				651B3F721E7D89A300FBB7DA /* parrot_anm.wav in Resources */,
 				65F863271E7A20CD007CFB56 /* pig_anm.png in Resources */,
 				651618D31E8219CD0045C098 /* Logo.png in Resources */,
 				651618931E802BE90045C098 /* bear_anm.wav in Resources */,
 				651618801E7EF7360045C098 /* sheep_anm.png in Resources */,
-				651618C81E820D860045C098 /* Level2Btn.png in Resources */,
+				65A263951E8DD05500BE86AE /* moon_full.png in Resources */,
+				651618C81E820D860045C098 /* level2btn.png in Resources */,
 				651618F61E8310AC0045C098 /* settings.m4a in Resources */,
+				65A263911E8CA14A00BE86AE /* playsoundbtn.png in Resources */,
 				65F863331E7A265B007CFB56 /* tree.png in Resources */,
 				65F863211E7A20CD007CFB56 /* giraffe.png in Resources */,
-				651B3F6C1E7D79C900FBB7DA /* RandomizeBtn.png in Resources */,
+				651B3F6C1E7D79C900FBB7DA /* randomizebtn.png in Resources */,
 				6516189D1E817D4E0045C098 /* lion_anm.wav in Resources */,
-				65A9267C1E84554D00495455 /* StartBtn.png in Resources */,
 				651618E61E82D7690045C098 /* home.png in Resources */,
 				65F863231E7A20CD007CFB56 /* monkey_anm.png in Resources */,
+				65A2638D1E8C93EF00BE86AE /* Level2Scene.sks in Resources */,
 				65F8630C1E7A1F78007CFB56 /* LaunchScreen.storyboard in Resources */,
 				65F863281E7A20CD007CFB56 /* rabbit.png in Resources */,
 				65F863001E7A1F78007CFB56 /* Actions.sks in Resources */,
@@ -521,7 +579,10 @@
 			files = (
 				651618BF1E81D2270045C098 /* MainMenuScene.swift in Sources */,
 				65E934EE1E7B878F00B4F9A9 /* BackgroundMusicController.swift in Sources */,
+				65A263A01E8ED2DF00BE86AE /* NotifcationSounds.swift in Sources */,
+				65A2639B1E8E06A400BE86AE /* CustomNode.swift in Sources */,
 				65A9267E1E8455F000495455 /* ButtonGrower.swift in Sources */,
+				65B2C0BA1E8F37C000F79FD7 /* ScoringController.swift in Sources */,
 				65F8633A1E7A2B08007CFB56 /* Level1Scene.swift in Sources */,
 				656FAE591E8A05D600D37F81 /* Positioning.swift in Sources */,
 				651B3F661E7D6AB800FBB7DA /* RandomizeButton.swift in Sources */,
@@ -530,7 +591,10 @@
 				651B3F641E7C825700FBB7DA /* MusicButton.swift in Sources */,
 				65F863361E7A29D9007CFB56 /* AnimalController.swift in Sources */,
 				651618F01E82E14B0045C098 /* SettingsScene.swift in Sources */,
-				65A926801E845B3300495455 /* StartButton.swift in Sources */,
+				65A2638F1E8CA0D500BE86AE /* PlaySoundButton.swift in Sources */,
+				65B2C0BC1E8F3A2200F79FD7 /* ScoringManager.swift in Sources */,
+				65A926801E845B3300495455 /* HomeButton.swift in Sources */,
+				65A263891E8C5EB100BE86AE /* Level2Scene.swift in Sources */,
 				652588501E7B7BC300543B65 /* AnimalSounds.swift in Sources */,
 				65F8633C1E7A3A08007CFB56 /* Animal.swift in Sources */,
 			);
